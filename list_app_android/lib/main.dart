@@ -11,13 +11,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
-        leading: const Icon(Icons.menu),
-        title: const Text('Main'),
-        actions: const [
-          IconButton(onPressed: null, icon: Icon(Icons.settings))
-        ],
-      ),
-    ));
+            appBar: AppBar(
+              leading: const Icon(Icons.menu),
+              title: const Text('Main'),
+              actions: const [
+                IconButton(onPressed: null, icon: Icon(Icons.search))
+              ],
+            ),
+            body: const Center(
+              child: Text('No List Found'),
+            )));
   }
 }
